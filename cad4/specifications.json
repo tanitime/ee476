@@ -1,0 +1,146 @@
+{ //Path to folder that contains library for this CAD.
+  //I.E. : "path": "Visvesh_Sathe /home/projects/ee476/sathe/cadence/cad4", 
+  "path": "<Student_Name> /home/projects/ee476.2023aut/jtrejo3/cadence/cad4",
+
+  "parts": {
+    
+    // Flip Flop Schematic
+    "1": {
+      "files": {
+        "cad4_turnin/part1/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        }
+      },
+      "measurements": {
+        "t_cq_rise_vdd08": "1.003e-10",
+        "t_cq_fall_vdd08": "9.762e-11",
+        "t_su_rise_vdd08":  "3.219e-11",
+        "t_su_fall_vdd08":  "3.563e-11",
+        "t_h_rise_vdd08": "-7.145e-12",
+        "t_h_fall_vdd08": "-1.802e-12",
+        "en_deliv_steady_vdd08": "2.483e-15",
+        "en_deliv_switch_vdd08": "5.065e-15",
+        "t_cq_rise_vdd12": "4.789e-11",
+        "t_cq_fall_vdd12": "4.582e-11",
+        "t_su_rise_vdd12":  "1.281e-11",
+        "t_su_fall_vdd12":  "1.231e-11",
+        "t_h_rise_vdd12": "-6.123e-12",
+        "t_h_fall_vdd12": "-8.247e-12",
+        "en_deliv_steady_vdd12": "6.128e-15",
+        "en_deliv_switch_vdd12": "1.222e-14"
+      } 
+    }, 
+
+    // Flip Flop Layout (extracted with C+CC)
+    "2": {
+       "files": {
+        "cad4_turnin/part2/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        },
+        "cad4_turnin/part2/DFSR.lvs.report" : "none",
+        "cad4_turnin/part2/DFSR.drc.summary" : "none",
+        "cad4_turnin/part2/DFSR.pex.netlist" : "none",
+        "cad4_turnin/part2/DFSR.pex.netlist.DFSR.pxi" : "none"
+      },
+      "measurements": {
+        "t_cq_rise": "8.359e-11",
+        "t_cq_fall": "9.394e-11",
+        "t_su_rise":  "2.104e-11",
+        "t_su_fall":  "1.003e-11",
+        "t_h_rise": "-1.97e-12",
+        "t_h_fall": "-1.353e-11",
+        "en_deliv_steady": "1.728e-14",
+        "en_deliv_switch": "3.194e-14"
+      } 
+    }, 
+   
+    // Flip Flop Layout II (extracted with R+C+CC)
+    //  - The DFSR.pex.netlist.pex is an additional file created by R+C+CC
+    "3": {
+        "files": {
+        "cad4_turnin/part3/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        },
+        "cad4_turnin/part3/DFSR.lvs.report" : "none",
+        "cad4_turnin/part3/DFSR.drc.summary" : "none",
+        "cad4_turnin/part3/DFSR.pex.netlist" : "none",
+        "cad4_turnin/part3/DFSR.pex.netlist.DFSR.pxi" : "none",
+        "cad4_turnin/part3/DFSR.pex.netlist.pex" : "none"
+      },
+      "measurements": {
+        "t_cq_rise": "8.953e-11",
+        "t_cq_fall": "9.362e-11",
+        "t_su_rise":  "2.115e-11",
+        "t_su_fall":  "9.794e-12",
+        "t_h_rise": "-1.85e-12",
+        "t_h_fall": "-1.346e-11",
+        "en_deliv_steady": "1.327e-14",
+        "en_deliv_switch": "2.604e-14"
+      } 
+    }, 
+
+    // LFSR Schematic
+    "4": {
+      "files": {
+        "cad4_turnin/part4/lfsr.ckt": { 
+          "circuit": {
+            "name": "lfsr",
+            "pins": [
+              "RST", "CLK",
+              "state<0>", "state<1>", "state<2>", "state<3>",
+              "state<4>", "state<5>", "state<6>", "state<7>",
+              "state<8>", "state<9>", "state<10>", "state<11>",
+              "state<12>", "state<13>", "state<14>", "state<15>"
+            ]
+          }
+        }
+      },
+      "measurements": {
+        "en_per_clock": "1.185e-13"
+      } 
+    }, 
+
+    // LFSR Layout
+    "5": {
+      "files": {
+        "cad4_turnin/part5/lfsr.ckt": { 
+          "circuit": {
+            "name": "lfsr",
+            "pins": [
+              "RST", "CLK",
+              "state<0>", "state<1>", "state<2>", "state<3>",
+              "state<4>", "state<5>", "state<6>", "state<7>",
+              "state<8>", "state<9>", "state<10>", "state<11>",
+              "state<12>", "state<13>", "state<14>", "state<15>"
+            ]
+          }
+        },
+        "cad4_turnin/part5/LFSR.lvs.report" : "none",
+        "cad4_turnin/part5/LFSR.drc.summary" : "none",
+        "cad4_turnin/part5/LFSR.pex.netlist" : "none",
+        "cad4_turnin/part5/LFSR.pex.netlist.LFSR.pxi" : "none"
+      },
+      "measurements": {
+        "en_per_clock": "3.478e-13"
+      } 
+    }, 
+
+    // Additional Questions
+    "6": {
+      "files": {"none": "none"}, 
+      "measurements": {"none": "none"}
+    } 
+  },
+  
+  // CAD 4 Report
+  "report": "cad4_turnin/cad4_report.pdf"
+}

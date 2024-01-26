@@ -1,0 +1,69 @@
+** Generated for: hspiceD
+** Generated on: Nov 12 20:31:26 2023
+** Design library name: cad3
+** Design cell name: NAND2_balanced
+** Design view name: schematic
+.GLOBAL vss! vdd!
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_bip
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mim
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_dnw
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_bip_npn
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfrtmom
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mos_cap_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_disres
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_res
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_hvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmvar
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_lvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfres_sa
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_esd
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmim
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mos_cap
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25ud18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25ud18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfjvar
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rtmom
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfres_rpo
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_hvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfind
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmvar_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_lvt
+
+** Library name: cad3
+** Cell name: NAND2_balanced
+** View name: schematic
+mpmos1 out b vdd! vdd! pch l=60e-9 w=550e-9 m=1 nf=1 sd=200e-9 ad=96.25e-15 as=96.25e-15 pd=1.45e-6 ps=1.45e-6 nrd=181.818e-3 nrs=181.818e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mpmos0 out a vdd! vdd! pch l=60e-9 w=550e-9 m=1 nf=1 sd=200e-9 ad=96.25e-15 as=96.25e-15 pd=1.45e-6 ps=1.45e-6 nrd=181.818e-3 nrs=181.818e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mnmos1 net14 b vss! vss! nch l=60e-9 w=350e-9 m=1 nf=1 sd=200e-9 ad=61.25e-15 as=61.25e-15 pd=1.05e-6 ps=1.05e-6 nrd=285.714e-3 nrs=285.714e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mnmos0 out a net14 vss! nch l=60e-9 w=350e-9 m=1 nf=1 sd=200e-9 ad=61.25e-15 as=61.25e-15 pd=1.05e-6 ps=1.05e-6 nrd=285.714e-3 nrs=285.714e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.END
